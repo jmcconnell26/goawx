@@ -51,7 +51,7 @@ func (jt *JobTemplateService) ListJobTemplates(params map[string]string) ([]*Job
 	return result.Results, result, nil
 }
 
-// Launch lauchs a job with the job template.
+// Launch launches a job with the job template.
 func (jt *JobTemplateService) Launch(id int, data map[string]interface{}, params map[string]string) (*JobLaunch, error) {
 	result := new(JobLaunch)
 	endpoint := fmt.Sprintf("%s%d/launch/", jobTemplateAPIEndpoint, id)
@@ -137,7 +137,7 @@ func (jt *JobTemplateService) DeleteJobTemplate(id int) (*JobTemplate, error) {
 	return result, nil
 }
 
-// DisAssociateCredentials remove Credentials form an awx job template
+// DisAssociateCredentials remove Credentials from an awx job template
 func (jt *JobTemplateService) DisAssociateCredentials(id int, data map[string]interface{}, params map[string]string) (*JobTemplate, error) {
 	result := new(JobTemplate)
 	endpoint := fmt.Sprintf("%s%d/credentials/", jobTemplateAPIEndpoint, id)

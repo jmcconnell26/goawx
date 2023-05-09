@@ -362,6 +362,7 @@ type JobTemplate struct {
 	CustomVirtualenv      interface{} `json:"custom_virtualenv"`
 	Credential            int         `json:"credential"`
 	VaultCredential       interface{} `json:"vault_credential"`
+	ExecutionEnvironment  int         `json:"execution_environment"`
 }
 
 // JobLaunch represents the awx api job launch.
