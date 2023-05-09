@@ -24,6 +24,7 @@ type AWX struct {
 	HostService                           *HostService
 	CredentialsService                    *CredentialsService
 	CredentialInputSourceService          *CredentialInputSourceService
+	ExecutionEnvironmentsService          *ExecutionEnvironmentsService
 	InventorySourcesService               *InventorySourcesService
 	InventoryGroupService                 *InventoryGroupService
 	OrganizationsService                  *OrganizationsService
