@@ -113,6 +113,9 @@ func NewAWX(baseURL, userName, passwd string, client *http.Client) (*AWX, error)
 		CredentialInputSourceService: &CredentialInputSourceService{
 			client: awxClient,
 		},
+		ExecutionEnvironmentsService: &ExecutionEnvironmentsService{
+			client: awxClient,
+		},
 		InventorySourcesService: &InventorySourcesService{
 			client: awxClient,
 		},
