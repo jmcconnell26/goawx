@@ -267,6 +267,11 @@ type CredentialInputSource struct {
 	Metadata         map[string]interface{} `json:"metadata"`
 }
 
+type ExecutionEnvironment struct {
+	ID   int    `json:"id"`
+	Name string `json:"name"`
+}
+
 // UnifiedJobTemplate represents the awx api unified job template.
 type UnifiedJobTemplate struct {
 	ID             int    `json:"id"`
