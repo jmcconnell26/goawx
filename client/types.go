@@ -363,7 +363,7 @@ type JobTemplate struct {
 	Credential            int         `json:"credential"`
 	VaultCredential       interface{} `json:"vault_credential"`
 	ExecutionEnvironment  int         `json:"execution_environment"`
-	JobSlicing            int         `json:"job_slicing"`
+	JobSliceCount         int         `json:"job_slice_count"`
 }
 
 // JobLaunch represents the awx api job launch.
